@@ -4964,9 +4964,9 @@ SpMat<eT>::init_cold(uword in_rows, uword in_cols, const uword new_n_nonzero)
     }
   
   #if defined(ARMA_64BIT_WORD)
-    const char* error_message = "SpMat::init(): requested size is too large";
+    const char* error_message = "X SpMat::init(): requested size is too large";
   #else
-    const char* error_message = "SpMat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD";
+    const char* error_message = "X SpMat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD";
   #endif
   
   // Ensure that n_elem can hold the result of (n_rows * n_cols)
